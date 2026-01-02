@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="container">
+        <h1>Controle de Despesas</h1>
+        <section class="input-section">
+           <p>Descrição: </p> <input type="text" name="descrição" id="input-description" placeholder="Descrição da despesa"/>
+        </section>
+        <section class="input-section">
+           <p>Valor: </p> <input type="number" name="valor" id="input-value" placeholder="Valor da despesa"/>
+        </section>
+        <section id="input-type">
+              <p>Tipo: </p> 
+              <select id="select-type">
+                <option value="entrada">Entrada</option>
+                <option value="saída">Saída</option>
+              </select>
+        </section>
+        <button id="inputBtn">Adicionar Despesa</button>
+        <section class="expense-list">
+            <ul id="expenses-ul">
+                <!-- Despesas serão adicionadas aqui dinamicamente -->
+            </ul>
+        </section>
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
