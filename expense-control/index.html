@@ -9,6 +9,9 @@
 <body>
     <main class="container">
         <h1>Controle de Despesas</h1>
+        <section id="saldo">
+            <h2>Saldo Atual: R$ <span id="saldo-atual"> 0.00</span></h2>
+        </section>
         <section class="input-section">
            <p>Descrição: </p> <input type="text" name="descrição" id="input-description" placeholder="Descrição da despesa"/>
         </section>
@@ -22,9 +25,10 @@
                 <option value="saída">Saída</option>
               </select>
         </section>
-        <button id="inputBtn">Adicionar Despesa</button>
+        <button id="inputBtn">Adicionar</button>
         <section class="expense-list">
             <ul id="expenses-ul">
+                
                 <!-- Despesas serão adicionadas aqui dinamicamente -->
             </ul>
         </section>
